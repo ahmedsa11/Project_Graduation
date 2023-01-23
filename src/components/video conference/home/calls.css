@@ -1,0 +1,154 @@
+
+ .lst{
+    width: 100%;
+    text-align: center;
+    padding: 60px 10px;
+    height: 100%;
+}
+.lst .fa-phone-alt{
+    font-size: 90px;
+    background-color: #f4593e;
+    color: #f8fff3;
+    padding: 9px;
+    border-radius: 16px;
+    height: fit-content;
+}
+
+.lst .fa-video{
+    background-color: #718ffe;
+    color: #f8fff3;
+    padding: 9px;
+    border-radius: 16px;
+    height: fit-content;
+    font-size: 90px;
+ 
+    }
+  .lst  .logimg{
+        position: relative;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: all 0.7s ease;
+        
+    }
+    .logimg span{
+        color: white;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .logimg img{
+        cursor: pointer;
+        object-fit: cover;
+        width: 110px;
+        transition: all 0.5s ease;
+        opacity: 0.5;
+    }
+    .lst .logimg:hover img{
+        opacity: 1;
+    }
+    .lst .calenderr{
+        position: relative;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .lst .calenderr i{
+        transition: all 0.5s ease;
+        opacity: 0.5;
+        color: #f8fff3;
+        font-size: 112px;
+    }
+    .lst .calenderr:hover  i{
+        opacity: 1;
+    }
+    .callaudio,.callvideo{
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    .callvideo:hover .fa-video {
+        background-color: #916ffe;
+    }
+    .callaudio:hover .fa-phone-alt{
+        background-color: #f4793e;
+    }
+    .lst .tit{
+        color: #fff;
+        transition: all 0.5s ease;
+        margin-top: 6px;
+        font-size: 16px;
+    }
+    
+    .lst  .popup-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(2, 2, 2, 0.685);
+        z-index: 9998;
+        opacity: 0;
+        pointer-events: none;
+        padding: 10px 20px;
+        transition: opacity 0.3s ease-in-out;
+      }
+       .lst  .popup-wrapper.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+       .lst  .popup {
+        padding: 22px 25px;
+        /* max-width: 380px; */
+        /* width: 500px; */
+        /* height: 400px; */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #333;
+        border-radius: 15px;
+      }
+       .lst  .close-btn {
+        position: absolute;
+        top: 2px;
+        right: 6px;
+        background: none;
+        border: none;
+        padding: 0;
+        border: 0;
+        width: fit-content;
+        height: fit-content;
+        outline: none;
+       text-align: center;
+        display: inline-block;
+        transition: transform 0.3s, opacity 0.3s;
+        -webkit-transition: transform 0.3s, opacity 0.3s;
+        -moz-transition: transform 0.3s, opacity 0.3s;
+        -ms-transition: transform 0.3s, opacity 0.3s;
+        -o-transition: transform 0.3s, opacity 0.3s;
+      }
+       .lst  .close-btn i{
+          font-size: 25px;
+      }
+       .lst  .close-btn:hover {
+        transform: scale(1.1);
+      }
+.lst .options .CreateNow{
+    width: 100%;
+    background: darkorchid;
+    font-size: 17px;
+    border: none;
+}
+@media only screen and (max-width: 800px){
+    
+ .lst{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+}

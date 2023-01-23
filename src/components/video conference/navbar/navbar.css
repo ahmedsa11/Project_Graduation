@@ -1,0 +1,127 @@
+.nav{
+    color: white !important;
+    padding: 30px 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+}
+.linkk{
+    color: white;
+    padding: 0px 15px!important;
+    text-align: center;
+}
+.toggler{
+    color: aliceblue;
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    top: 107px;
+    display: none !important;
+    opacity: 0 !important;
+}
+.linkk.active{
+    background-color: rgb(85, 85, 85);
+    border-radius: 0px 30px 30px 0px;
+    padding: 6px !important ;
+}
+
+.icon-opts{
+    display: flex;
+    height: 554px;
+    padding-top: 30px;
+    z-index: 8888;
+}
+.icon-opts ul{
+    display: flex;
+    justify-content: space-evenly !important;
+}
+.icon-opts ul a li{
+    margin: 0px !important;
+}
+ .icon-opts ul i {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icon-opts .logimg{
+    text-align: center;
+    position: absolute;
+    margin-left: 10px;
+    bottom: 149px;
+} 
+.icon-opts .logimg span{
+    color: white;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    position: absolute;
+    left: 0;
+    top: -21px;
+}
+.icon-opts .logimg img{
+    cursor: pointer;
+}
+.icon-opts .logimg:hover span{
+    opacity: 1 !important;
+}
+@media only screen and (max-width: 800px) {
+    .icon-opts .logimg{
+        right: 5px;
+        position: absolute;
+        top: 103px;
+       
+    }
+    .icon-opts .logimg span{
+        color: white;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+        position: absolute;
+        left: -10px;
+        top: -21px;
+    }
+    .toggler{
+        display: block !important; 
+        opacity: 1 !important;
+        transition: all 0.5s ease !important;
+    }
+    .linkk li {
+        display: inline-block;
+        margin:0px !important;
+       
+    }
+    .linkk{
+        color: white;
+        padding: 0px 0px!important;
+        text-align: center;
+    }
+.nav{
+    color: white !important;
+    position: absolute;
+    top: 113px !important;
+    margin: 0 !important;
+    padding: 0px 5px !important;
+    left: 0px !important;
+    transform: translateX(-200%);
+    opacity: 0;
+    flex-direction: row !important;
+    transition: all 0.5s ease !important;
+    top: 108px !important;
+    left: 35px !important;
+    }
+    .open{
+        transition: all 0.5s ease !important;
+       
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    .icon-opts ul li i {
+        margin: 0px 9px !important;
+    }
+    /* .icon-opts ul{
+        width: 100% !important;
+    } */
+    .linkk.active{
+        border-radius: 7px;
+        padding: 0px !important;
+    }
+}

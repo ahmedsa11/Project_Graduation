@@ -1,0 +1,112 @@
+.home{
+    background-color: rgba(22,27,33,255);
+    overflow: hidden;
+    height: 100vh;
+}
+i{
+    cursor: pointer;
+}
+.home .main-side{
+    width: 100% ;
+    height:auto;
+}
+.navbar{
+    background-color: rgba(24,31,39,255);
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.home .main-side ul{
+    list-style: none;
+}
+
+.home .main-side ul li{
+    display:inline-block;
+        margin: 25px 3px
+}
+.home .main-side .vi{
+    display: flex;
+    background-color: rgba(22,27,33,255)
+    ;
+}
+.home .main-side .vi .icon-opts ul i{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.home .main-side .vi .vid-stream {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px 0px 0px 0px;
+    margin-top: 15px;
+   height: 100vh;
+    background-color: #181f27;
+    margin-left: 37px;
+}
+.home .main-side .vi .vid-stream .prof{
+    padding: 15px;
+    position: relative;
+}
+
+ .dots{
+     display: none !important;
+ }
+.home .main-side .vi .vid-stream .prof h3{
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+.home .main-side .vi .vid-stream .prof .pic{
+    width: 100%;
+    border: 2px solid #531863;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.home .main-side .vi .vid-stream .prof .pic img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    object-fit: cover;
+}
+.history{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 800px) {
+    .history{
+        display: block;
+    }
+    .home{
+  
+        height: 100% !important;
+    }
+    .home .main-side .vi .vid-stream {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 15px;
+        background-color: #1f232c;
+        margin: 61px 15px 15px 15px !important;  
+        height: 100%;
+      }
+    .home .main-side .vi .vid-stream .dailymeeting {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .home{
+        background-color: rgba(22,27,33,255);
+        overflow-y: auto;
+        height: 100%;
+        overflow-x: hidden;
+        height: 100% !important;
+    }
+}

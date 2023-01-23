@@ -1,0 +1,280 @@
+.setting {
+    background-color: rgba(22,27,33,255);
+    overflow: hidden;
+    height: 100%;
+}
+.setting h2{
+    color: #f8fafc;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 27px;
+    position: absolute;
+}
+.setting .data{
+    position: relative;
+
+    text-align: center;
+    justify-content: center;
+}
+.setting .proimg input[type="file"]::after{
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-color: chocolate;
+    color: brown;
+    padding: 0px;
+}
+.setting .proimg input[type="file"]::before{
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-color: chocolate;
+    color: brown;
+    padding: 0px;
+}
+.setting .data .proimg {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+.setting .data .proimg form{
+    padding: 0px !important;
+    height: fit-content !important;
+    text-align: center;
+    background-color: transparent !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.setting .data img.logoutimg{
+    object-fit: cover;
+    width: 50px;
+    cursor: pointer;
+}
+.setting .data .proimg i{
+    color: white;
+    padding: 10px;
+    background-color: #7174f1;
+    border-radius: 50%;
+    width: 35px !important;
+    height: 35px !important;
+}
+.setting .image-editor{
+    position: absolute;
+    top: 76px;
+    right: -4px;
+}
+.setting .image-editor #imginput{
+    width: 35px !important;
+    height: 35px !important;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.setting .data .proimg img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin:32px auto;
+    object-fit: cover;
+}
+.setting .data .formdata{
+    max-width: 442px;
+    position: relative;
+    margin: 0px auto;
+}
+.setting .data .formdata label{
+    color: #5e6369;
+    display: flex;
+}
+.setting .data .formdata .inputcout{
+  position: relative;
+}
+.setting .data .formdata .inputcout i{
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    color: #ccd2d6;
+    font-size: 14px;
+}
+.setting .data .formdata .inputcout input{
+    background-color: #181f27;
+    padding: 5px;
+    display: block;
+    border: 1px solid #3a4149 !important;
+    color: #ccd2d6;
+    border-radius: 7px !important;
+}
+.setting .data .formdata .inputcout select
+{
+    background-color: #181f27;
+    border: 1px solid #3a4149 !important;
+    padding: 5px;
+    color: #ccd2d6;
+    width: 100%;
+    border-radius: 7px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-bottom: 6px;
+}
+.setting .data .hidepass{
+    display: none;
+}
+.setting .data .formdata .notification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.setting .data .formdata .notification span{
+   color: #5e6369;
+}
+.setting .data .formdata .notification i{
+    color: aliceblue;
+    font-size: 25px;
+ }
+ .setting .data .logout{
+    width: 88px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px !important;
+    font-size: 14px;
+    background-color: #7174f1;
+ }
+ .setting .data .formdata .notification .switch {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+  }
+  .setting .data .formdata .notification.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .setting .data .formdata .notification .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .setting .data .formdata .notification .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .setting .data .formdata .notification input:checked + .slider  {
+    
+    background-color: #181f27;
+  }
+  .setting .data .formdata .notification input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #7476f7;
+  }
+  .setting .data .formdata .notification .slider.round {
+    border-radius: 34px;
+    border: 1px solid #3a4149 ;
+  }
+  .setting .data .formdata .notification .slider.round:before {
+    border-radius: 50%;
+  }
+ .setting .data .saveandcancel{
+    position: relative;
+    float: right;
+    display: none;
+ }
+ .setting .data .saveandcancel .save{
+    width: 100px;
+    text-align: center;
+    border: none;
+    border-radius: 25px !important;
+    margin: 10px;
+    padding: 10px;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    background-color: #7476f7;
+    font-size: 14px;
+    color: white;
+}
+.setting .data .saveandcancel .save:hover{
+    background-color: gray;
+}
+.setting .data .saveandcancel .cancel{
+    width: 100px;
+    text-align: center;
+    border: none;
+    border-radius: 0px !important;
+    margin: 10px;
+    padding: 10px;
+    background: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+i{
+    cursor: pointer;
+}
+.setting  .main-side{
+    width: 100% ;
+    height:auto;
+}
+.navbar{
+    background-color: rgba(24,31,39,255);
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.setting  .main-side ul{
+    list-style: none;
+}
+.setting  .main-side .navbar .logo i{
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.setting  .main-side .vi{
+    display: flex;
+    background-color: rgba(22,27,33,255)
+    ;
+}
+.setting  .main-side .vi .vid-stream {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px 0px 0px 0px;
+    margin-top: 15px;
+    background-color: #181f27;
+    margin-left: 37px;
+    height: 100vh;
+}
+@media only screen and (max-width: 800px) {
+    .setting {
+        height: 100% !important;
+    }
+    .setting  .main-side .vi .vid-stream {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 15px;
+        background-color: #1f232c;
+        margin: 61px 15px 15px 15px !important;  
+        height: 100%;
+      }
+}

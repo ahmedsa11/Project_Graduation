@@ -1,0 +1,382 @@
+
+.video-conference .chat-side{
+    
+    background-color:#1f282d;
+    color: #fff;
+    border: 1px solid rgba(45,52,58,255);
+    position: relative;
+    transition:all 0.7s ease;
+    height:100vh !important;
+   
+    overflow: hidden;
+    /* left: 30% !important; */
+    width: 0%;
+    
+}
+
+.video-conference .chat-side .fa-comment-dots{
+    display: none;
+}
+.video-conference .chat-side.open{
+    /* left: 0% !important; */
+    width:30%;
+   
+}
+.video-conference .chat-side:target{
+    display:block;
+}
+.video-conference .chat-side .fa-arrow-circle-right{
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.video-conference .chat-side .chat{
+    display:flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 76%;
+    overflow-x: hidden;
+    padding-top: 82px;
+}
+.fa-sign-out-alt{
+    display: none !important;
+}
+
+
+.video-conference .chat-side .chat .sender{
+    display: flex;
+    align-items: flex-end
+}
+.video-conference .chat-side .chat .sender img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 15px;
+    object-fit: cover;
+}
+.video-conference .chat-side .chat .sender .text-box{
+    width: fit-content;
+    height: fit-content;
+  margin-bottom: 13px;
+  position: relative;
+  padding: 5px;
+  background-color: #333;
+  text-align: left;
+  border: 1px solid #333;
+  border-radius: 10px;
+word-wrap: break-word;
+}
+
+.video-conference .chat-side .chat .sender .text-box:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    bottom: 0;
+    right: -15px;
+}
+
+.video-conference .chat-side .chat .sender .text-box:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid #333;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    bottom: -1px;
+    left: -16px;
+    border-radius: 0px 3px 70px 60px;
+}
+
+
+.reciver{
+    display: flex;
+    align-items: flex-end;
+}
+.reciver .text-box{
+    width: fit-content !important;
+    height: fit-content !important;
+    position: relative;
+    padding: 5px;
+    background-color: #00B2FF;
+    text-align: left;
+    border: 1px solid #00B2FF;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 12px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+.reciver .text-box:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    bottom: 0;
+    right: -15px;
+
+}
+.reciver .text-box:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid #00B2FF;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    bottom: -1px;
+    right: -16px;
+    border-radius: 0px 4px 70px 60px;
+}
+.reciver .text-box p{
+    text-align: left !important;
+    font-size: 17px !important;
+    padding: 3px !important;
+    color: white;
+    margin: 0 !important;
+    word-break: break-word;
+}
+.sender .text-box p{
+    text-align: left !important;
+    font-size: 17px !important;
+    padding: 3px !important;
+    color: white;
+    margin: 0 !important;
+    word-break: break-word;
+}
+.message-time-left{
+    position: absolute;
+    font-size: .85em;
+    font-weight: 300;
+    bottom: 3px;
+    left: 5px;
+}
+.message-time-right{
+position: absolute;
+font-size: .85em;
+font-weight: 300;
+bottom: 3px;
+right: 5px;
+}
+.typing{
+  
+    position: absolute;
+    margin-top: 10px;
+    bottom: 20px;
+    width: 100%;
+}
+.typing p{color: #ddd;   
+     text-align: left;
+     margin-left: 20px
+    }
+.typing span{
+   color: white;
+   font-weight: bold;
+}
+
+.textin{
+    display: flex;
+    position: relative;
+}
+.textin textarea{
+    margin:0px 10px;
+    height: 120px;
+    color: #fff;
+    border-radius: 20px;
+    background:#1f282d;
+    border: 2px solid #40474a;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+}
+.textin textarea:focus{outline: #333;}
+.textin textarea::placeholder{
+    font-weight: bold !important;
+    color: white !important;
+}
+.textin .feat i.fa-image{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    margin: 5px;
+    font-size: 22px;
+}
+.textin .feat i.fa-microphone{
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    margin: 5px;
+    font-size: 21px;
+}
+.textin .send i{
+    width: 15%;
+    margin-top: 35px;
+    FONT-SIZE: 30px;
+    color: #52ac69;
+    cursor: pointer;
+    padding: 10px;
+}
+.textin textarea{
+    flex: 1;
+}
+.icon, .name{
+    z-index: 10;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius:5px ;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  @media only screen and (max-width: 800px) {
+    .video-conference .chat-side {
+      width: 0%;
+      transition:all 0.7s ease;
+    }
+    .video-conference .main-side{
+        width: 100%;
+        transition:all 0.7s ease;
+        position: relative !important;
+    }
+    .video-conference .chat-side.open{
+       width: 100%;
+       display: block;
+       left: 0%;
+    }
+    .video-conference .main-side.openmain{
+        width:0% !important;
+        position: relative !important;
+        
+    }
+    .fa-sign-out-alt{
+        display: block !important;
+        font-size: 28px;
+         margin: 5px 10px;
+    }
+    .arrowback{
+        display: none;
+    }
+    .video-conference{
+        height:100vh !important;
+        
+    }
+    .video-conference .main-side .vi .vid-stream .vids .vid-item .name{
+        position: absolute;
+        bottom: 5px !important;
+        color: #fff;
+        right: 7px !important;
+        background: rgba(0,0,0,0.5);
+        padding: 2px !important;
+        border-radius: 10px !important;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    
+    .video-conference .main-side .vi .vid-stream .vids .vid-item .icon {
+        position: absolute;
+        top: 5px !important;
+        left: 7px !important;
+        background: rgba(0,0,0,0.5);
+        padding: 3px !important;
+        border-radius: 10px !important;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        width: 10%;
+        text-align: center;
+        font-size: 10px;
+    }
+    .video-conference .main-side .vi .vid-stream .vids {
+        height: 73% !important;
+        margin-top: 77px;
+    }
+    .footer .buttons {
+        position: relative;
+        bottom: 60px;
+    }
+    .footer .tools{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 21px;
+        position: absolute;
+        top: 106px;
+        right: 8px;}
+        .footer .tools .dropdown-content{
+            top: 40px;
+            right: -9px;
+        }
+        .g{
+            display: none !important;
+        }
+        .video-conference .main-side .navbar .grid-show img{
+            height: 35px;
+            width: 35px;
+            border-radius: 50%; 
+            position: relative;
+            bottom: 5px;
+            cursor: pointer;
+            margin-left: 0px !important;
+        }
+        .fa-comment-dots{
+            margin-left: 0px !important;
+            font-size: 27px !important;
+        }
+  }
+  strong{
+    border-bottom: 2px solid #fff;
+    color: #fff;
+  }
+
+
+  /* New Code */
+
+  .chat-side .sended-image{
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 164px;
+}
+.chat-side .img-inbox{
+    width: 100% !important;
+    border-radius: 0px !important;
+    height: auto !important;
+    margin: 0px !important;
+}
+.chat-side .info-imagee{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.chat-side .info-imagee i{
+    
+    z-index: 3;
+    position: absolute;
+    left: 238px;
+    top: 14px;
+}
+

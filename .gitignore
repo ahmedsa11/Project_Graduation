@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.env
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# APP_API_KEY= *AIzaSyBkc0zHZGyxap89jSoRcNywaWo8MssxVZY*
+# APP_AUTH_DOMAIN= *connect-be9f5.firebaseapp.com*
+# APP_PROJECT_ID= *connect-be9f5
+# APP_STORAGE_BUCKET= *connect-be9f5.appspot.com*
+# APP_MESSAGING_SENDER_ID= *792973719285*
+# APP_APP_ID= *1:792973719285:web:9b0cad929a4efa6d4a77bc*
+# export const firebaseConfig = {
+#   apiKey: *AIzaSyBkc0zHZGyxap89jSoRcNywaWo8MssxVZ*,
+#   authDomain: *connect-be9f5.firebaseapp.com*,
+#   projectId: *connect-be9f5*,
+#   storageBucket: *connect-be9f5.appspot.com*,
+#   messagingSenderId: *792973719285*,
+#   appId: *1:792973719285:web:9b0cad929a4efa6d4a77bc*,
+#   measurementId: *G-E7Y71NG8FX*
+# };

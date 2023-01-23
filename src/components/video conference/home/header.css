@@ -1,0 +1,121 @@
+
+i{
+    cursor: pointer;
+}
+.head .navbar{
+    background-color: rgba(24,31,39,255);
+    padding: 6px !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: space-between;
+}
+.head .logandtit{
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+.head  .navbar .logo{
+    position: relative;
+    text-align: center;
+    width:107px;
+    cursor: pointer;
+}
+.head  .navbar .logo img{
+    width: 43px;
+    height: 53px;
+}
+.head  .navbar .logo i{
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.head .navbar  img{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.head .navbar  span{
+    color: #d1d5d6;
+    border-bottom: 2px solid #d1d5d6;
+    font-size: 16px;
+}
+.head  .vi .vid-stream .prof{
+    padding: 15px;
+    position: relative;
+    opacity: 1;
+    display: block;
+}
+.head  .vi .vid-stream .prof h3{
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+.head  .vi .vid-stream .prof .pic{
+    width: 100%;
+    border: 2px solid #531863;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.head  .vi .vid-stream .prof .pic img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+@media only screen and (max-width: 800px) {
+    .head  .navbar .title .ser i{
+        bottom: 24px;
+        }
+    .head{
+  
+        height: 100% !important;
+    }
+    .head  .navbar .logo{
+        width:fit-content;
+        font-size: 15px !important;
+        margin-left: -22px;
+    }
+    .head  .navbar .title{
+        width: 100%;
+        display: flex;
+    }
+    .head  .vi .vid-stream {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 15px;
+        background-color: #1f232c;
+        margin: 61px 15px 15px 15px !important;  
+      }}
+      @media only screen and (max-width: 600px) {
+        .head  .navbar .logo{margin-left: 5px;}
+      }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .head  .navbar .logo{margin-right: 5px; margin-left: 0px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 800px  )  and (min-width: 768px  ) {
+    .head  .navbar .logo{margin-right: 0px;margin-left: -22px;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {     .head .navbar input{
+    width: 500px;
+}
+.head  .navbar .logo{margin-right: 50px;margin-left: -22px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .head  .navbar .logo{margin-right: 60px;margin-left: -22px;}
+}

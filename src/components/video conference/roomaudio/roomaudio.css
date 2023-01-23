@@ -1,0 +1,824 @@
+.roomaudio  .video-conference{
+    display: flex;
+    background-color: rgba(22,27,33,255);
+    overflow: hidden;
+   height: 100vh !important;
+}
+.roomaudio  .video-conference .main-side{
+    width: 100% ;
+    height:auto;
+    transition:all 0.7s ease;
+}
+
+.navbar{
+    background-color: rgba(24,31,39,255);
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.roomaudio  .video-conference .main-side ul{
+    list-style: none;
+}
+
+.roomaudio  .video-conference .main-side ul li{
+    display:inline-block;
+        margin: 25px 3px
+}
+.roomaudio  .video-conference .main-side .navbar .logo{
+    position: relative;
+    width: 107px;
+    text-align: center;
+    margin-top: -12px;
+    margin-left: -21px;
+}
+
+.roomaudio  .video-conference .main-side .navbar .logo img{
+    width: 43px;
+    height: 53px;
+}
+.roomaudio  .video-conference .main-side .navbar .title{
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    margin-right: auto;
+
+}
+.roomaudio  .video-conference .main-side .navbar .title h4{
+font-weight: bold;    
+}
+.roomaudio  .video-conference .main-side .navbar .title i{
+    font-size: 25px;
+}
+.arrowback{
+    color: white !important;
+}
+.roomaudio  .video-conference .main-side .navbar .grid-show i{
+font-size: 25px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+
+}
+.roomaudio  .video-conference .main-side .navbar .grid-show img{
+    width: 32px;
+    margin: 0px;
+    position: relative;
+    bottom: 3px;
+    left: 2px;
+    object-fit: cover;
+}
+.roomaudio  .video-conference .main-side .navbar .grid-show #imgpa{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    object-fit: cover; 
+}
+.roomaudio  .video-conference .main-side .navbar .grid-show #grid4 i{
+    font-size: 26px;
+    position: relative;
+    top: 2px;
+}
+.roomaudio  .video-conference .main-side .navbar .grid-show li{
+    display:inline-block;
+margin: 14px 3px
+}
+
+.roomaudio  .video-conference .main-side .navbar .grid-show #grid6 i{
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+.roomaudio  .video-conference .main-side .navbar .grid-show #chhh{
+    width: 34px;
+    position: relative;
+    left: 5px;
+    top: -3px;
+}
+.roomaudio .video-conference .main-side .sendnameVtext{
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    display: none;
+}
+.fa-comment-dots{
+    margin-left: 20px;
+    font-size: 27px !important;
+    border: none;
+}
+.fa-comment-dots.active{
+    border-bottom: 2px solid white !important;
+}
+.roomaudio  .video-conference .main-side .vi{
+    display: flex;
+    background-color: rgba(22,27,33,255)
+    ;
+}
+
+.cp{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0px 16px;
+    align-items: center;
+}
+.roomaudio  .video-conference .main-side .vi .icon-opts ul i{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts{
+    display: flex;
+    position: relative;
+    /* margin-left: 76px; */
+    width: 100%;
+    margin: 0 50px;
+    overflow: hidden;
+    height: 57px;
+
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts img
+{
+    position: absolute;
+    top: 12px;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts .nump{
+    width: 74px;
+    border-radius: 9px;
+    border: 2px solid #b9bec2;
+    padding: 0px 4px 0px 33px;
+    text-align: center;
+    background-color: rgba(22,27,33,255);
+    color: #fff;
+    cursor: pointer;
+    height: 37px;
+    margin-top: 9px;
+    font-size: 17px;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts .nump:focus{
+    outline: none;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts i{
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts .invite {
+    flex:1;
+    margin: 11px 0px 0px 0px;
+    font-size: 20px;
+    color: white;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts .popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.685);
+    z-index: 9998;
+    opacity: 0;
+    pointer-events: none;
+    padding: 10px 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .roomaudio  .video-conference .main-side .vi .vid-stream .opts .popup-wrapper.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .roomaudio  .video-conference .main-side .vi .vid-stream .opts .popup {
+    padding: 22px 25px;
+    /* max-width: 380px; */
+    /* width: 500px; */
+    /* height: 400px; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    border-radius: 15px;
+  }
+  .roomaudio  .video-conference .main-side .vi .vid-stream .opts .close-btn {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    background: none;
+    border: none;
+    padding: 0;
+    border: 0;
+    width: fit-content;
+    height: fit-content;
+    outline: none;
+   text-align: center;
+    display: inline-block;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition: transform 0.3s, opacity 0.3s;
+    -moz-transition: transform 0.3s, opacity 0.3s;
+    -ms-transition: transform 0.3s, opacity 0.3s;
+    -o-transition: transform 0.3s, opacity 0.3s;
+  }
+  .roomaudio  .video-conference .main-side .vi .vid-stream .opts .close-btn i{
+      font-size: 25px;
+  }
+  .roomaudio  .video-conference .main-side .vi .vid-stream .opts .close-btn:hover {
+    transform: scale(1.1);
+  }
+  .roomaudio .video-conference .main-side .vi .vid-stream .opts .copy button {
+    width: 100%;
+    padding: 9px;
+    font-size: 15px;
+    border-radius: 7px !important;
+    border: none;
+    font-weight: 400;
+    background-color: cornflowerblue;
+  }
+   .roooma.roomaudio .video-conference .main-side .vi .vid-stream .opts .copy input{
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  .screen-record video{
+    width: 82%;
+    display: flex;
+    /* margin: 0 auto; */
+    position: absolute;
+    z-index: 333;
+    left: 50;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .roomaudio  .video-conference .main-side  .screen-record  .popup-wrapper2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.685);
+    opacity: 0;
+    padding: 10px 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+.roomaudio  .video-conference .main-side  .screen-record  .popup-wrapper2.hideop {
+  
+    display: none;
+}
+.roomaudio  .video-conference .main-side  .screen-record  .popup-wrapper2.showop {
+    opacity: 1;
+    display: block;
+    z-index: 9999;
+  }
+  /* .roomaudio  .video-conference .main-side  .screen-record  .popup {
+    padding: 22px 25px;
+    max-width: 380px; */
+    /* width: 500px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#333;
+    border-radius: 15px;
+  } */
+  .roomaudio  .video-conference .main-side  .screen-record  .close-btn2 {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    background: none;
+    border: none;
+    padding: 0;
+    border: 0;
+    width: fit-content;
+    height: fit-content;
+    outline: none;
+   text-align: center;
+   cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition: transform 0.3s, opacity 0.3s;
+    -moz-transition: transform 0.3s, opacity 0.3s;
+    -ms-transition: transform 0.3s, opacity 0.3s;
+    -o-transition: transform 0.3s, opacity 0.3s;
+  }
+  .roomaudio  .video-conference .main-side  .screen-record  .close-btn2 i{
+      font-size: 25px;
+  }
+  .roomaudio  .video-conference .main-side  .screen-record  .close-btn2:hover {
+    transform: scale(1.1);
+  }  
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts .invite i{
+    position: relative;
+    top: 0;
+    margin-right: 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts .rec-time{
+    border-radius: 9px;
+    border: 2px solid #b9bec2;
+    padding: 5px 20px;
+    margin-right: 76px;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    color: white;
+    width: fit-content;
+    text-align: center;
+    width: 80px;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .opts .rec-time #dottt{
+    width: 7px;
+    height: 7px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+    left: 7px;
+    top: 11px;
+    display: none;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .vids{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 80%;
+    overflow-y: scroll;
+position: relative;    
+
+}
+
+.roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item{
+    width: 215px;
+    height: 182px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rebeccapurple;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .vids video{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item.signlang{
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    display: none;
+    width: 215px;
+    height: 182px;
+    border: 1px solid #333;
+    text-align: center;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item img{
+    width: 100px;
+    height: 104px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.roomaudio  .video-conference .main-side .vi .vid-stream .vids .signlang .signvid{
+    width: 100%;
+    /* height: 104px; */
+    border-radius: 0px;
+    height: 100%;
+}
+.showsign{
+    display: block !important;
+}
+.showName{
+    display: block !important;
+}
+
+.roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item .name{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    right: 15px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item .icon {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+}
+.footer{
+    display:flex;
+    width:100%;
+    background-color: rgba(22,27,33,255);
+    height: 0px;
+    
+}
+.caption{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    height: fit-content;
+    /* background-color: rgba(0,0,0,0.4); */
+  
+    /* left: 47.4%; */
+
+    position: relative;
+    width: fit-content;
+    display: none;
+    overflow-wrap: anywhere;
+    /* -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); */
+    /* -moz-animation: my-animation 14s linear infinite;
+    -webkit-animation: my-animation 14s linear infinite;
+    animation: my-animation 14s linear infinite; */
+}
+ 
+.roomaudio .caption .pcap{
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    position: relative;
+}
+
+.footer .tools{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    height: fit-content;
+}
+
+  .dropbtn img{
+      width: 37px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    bottom: 0px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(22,27,33,255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999999;
+    border: 1px solid darkmagenta;
+    transition: 1s ease;
+    bottom: 19px;
+  }
+ 
+  .dropdown-content ul{
+    color: white;
+    display: inline-block;
+    height: fit-content;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: initial;
+  }
+  .dropdown-content ul li{
+    margin: 0px !important;
+    padding: 5px !important;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: 100%;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content ul li:hover {background-color:#333;color: white;}
+  .dropdown-content ul li.activetool{
+    background-color:#333 !important;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+.footer .tools button{
+background: none;
+border: none;
+color: #fff;
+font-size: 20px;
+padding: 0;
+margin-left: 10px;
+text-align: center !important;
+}
+.footer .tools button i{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.footer .buttons{
+    flex: 1;
+  text-align: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    bottom: 70px;
+   
+}
+.footer .buttons ul {  display: contents;}
+.footer .buttons li{
+    
+    margin: 0px !important;
+    margin-left: 45px !important;
+    text-align: center; 
+}
+.footer .buttons button{
+    background-color: rgba(32,40,42,255);
+    border-radius: 15px !important;
+    border: none;
+    padding: 9px;
+    pointer-events: all;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 43px;
+}
+.footer .buttons button i {
+    font-size: 19px;
+}
+.footer .buttons #phonealt{
+    background-color: #f0273e;
+    padding: 0px;
+    position: relative;
+    height: fit-content;
+    /* right: 8px; */
+    width: 64px;
+    top: 14px;
+}
+.footer .buttons #phonealt img{
+width: 47px;
+}
+.footer .buttons ul li{
+    display: -moz-inline-grid;
+    display: -ms-inline-grid;
+    display: inline-grid;
+}
+.footer .fa-phone-alt{
+    color: red;
+}
+.footer .fa-record-vinyl{
+    color: red;
+}
+.roomaudio  .video-conference .ch{
+    background-color: rgba(24,31,39,255);
+}
+.icon, .name{
+    z-index: 10;
+}
+/*scroll*/
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius:5px ;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  @media only screen and (max-width: 800px) {
+    .roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item.signlang{
+        width: 215px;
+        height: 182px;
+    }
+    .footer .buttons #phonealt{
+
+        width: 40px;
+     
+    }
+    .roomaudio  .video-conference .chat-side {
+      width: 0%;
+      transition:all 0.7s ease;
+    }
+    .roomaudio  .video-conference .main-side{
+        width: 100%;
+        transition:all 0.7s ease;
+        position: relative !important;
+    }
+    .roomaudio  .video-conference .main-side .vi .vid-stream .opts{
+        display: none;
+    }
+    .roomaudio  .video-conference .chat-side.open{
+       width: 100%;
+       display: block;
+       
+    }
+    
+    .roomaudio  .video-conference .main-side.openmain{
+        width:0% !important;
+        position: relative !important;
+        right: 100%;
+    
+    }
+    .fa-sign-out-alt{
+        display: block !important;
+        font-size: 28px;
+         margin: 5px 10px;
+    }
+    .arrowback{
+        display: none;
+    }
+    .roomaudio  .video-conference{
+        height:100vh !important;
+        
+    }
+    .roomaudio  .video-conference .chat-side .chat {
+        height: 66% !important;
+    }
+    .roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item .name{
+        position: absolute;
+        bottom: 5px !important;
+        color: #fff;
+        right: 7px !important;
+        background: rgba(0,0,0,0.5);
+        padding: 1px !important;
+        border-radius: 10px !important;
+        cursor: pointer;
+        font-size: 9px;
+    }
+    
+    .roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item .icon {
+        position: absolute;
+        top: 5px !important;
+        left: 7px !important;
+        background: rgba(0,0,0,0.5);
+        padding: 5px !important;
+        border-radius: 9px !important;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        font-size: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .roomaudio  .video-conference .main-side .vi .vid-stream .vids {
+        height: 73% !important;
+        margin-top: 77px;
+    }
+    .footer .buttons {
+        position: relative;
+        bottom: 100px;
+    }
+    .footer .tools{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 21px;
+        position: absolute;
+        top: 106px;
+        right: 8px;}
+        .footer .tools .dropdown-content{
+            top: 27px;
+            right: -9px;
+        }
+        .roomaudio  .video-conference .main-side .navbar .grid-show #imgpa{
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            position: relative;
+            bottom: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            object-fit: cover; 
+        }
+        .roomaudio  .video-conference .main-side .navbar .grid-show #grid6 img{
+            width: 30px;
+            position: relative;
+            top: -4px;
+            border-radius: 0px;
+            height: 27px;
+        }
+        .roomaudio  .video-conference .main-side .navbar .grid-show #chhh{
+            width: 34px;
+            position: relative;
+            left: 5px;
+            top: -3px;
+            border-radius: 0px;
+        }
+        .roomaudio  .video-conference .main-side .navbar .grid-show #grid6 img{
+            width: 30px;
+            position: relative;
+            top: -4px;
+            border-radius: 0px;
+        }
+        .fa-comment-dots{
+            margin-left: 0px !important;
+            font-size: 27px !important;
+        }
+  }
+  @media only screen and (max-width: 600px) {
+    .roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item.signlang{
+        width: 180px;
+        height: 160px;
+    }
+    .roomaudio  .video-conference .main-side .navbar .logo {
+        position: relative;
+        width: fit-content;
+        text-align: center;
+        margin-top: -12px;
+        margin-left: 11px;
+    }
+    .roomaudio  .video-conference .main-side .grid-show ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    .roomaudio  .video-conference .main-side .vi .vid-stream .vids .vid-item {
+        width: 180px;
+        height: 160px;
+        margin: 5px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+    }
+    .footer .buttons #phonealt{
+
+        width: 40px;
+     
+    }
+    .footer .buttons button{
+        width: 30px;
+        padding: 7px 22px;
+    }
+    .footer .buttons li {
+        margin: 0px !important;
+        margin-left: 6px !important;
+        text-align: center;
+    }
+    .roomaudio  .video-conference .main-side .vi .vid-stream
+    {
+        height: 76vh;
+    }
+  }
+  @media only screen and (max-width: 366px) {
+    .footer .buttons button{
+        width: 10px;
+        padding: 7px 22px;
+    }
+    .footer .buttons li {
+        margin: 0px !important;
+        margin-left: 6px !important;
+        text-align: center;
+    }
+  }

@@ -1,0 +1,766 @@
+.landing{
+    overflow: hidden;
+}
+.activelink{
+    border-bottom: 3px solid #cb7c1c;
+}
+.landing .land{
+    height: 100vh;
+    background: linear-gradient(118.54deg, #ED4690 -34.81%, #5522CC 63.38%);
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    overflow: hidden;
+}
+.landing .land .navbarr{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+}
+.landing .land .navbarr img{
+    height: 50px;
+}
+.landing .land .navbarr .profilee{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.landing .land .navbarr span{
+    color: white;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+.landing .land .navbarr .ulnav{
+    display: flex;
+    align-items: center;
+}
+.landing .land .navbarr .ulnav li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.landing .land .navbarr .ulnav li a{
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 22px;
+    color: white !important;
+}
+.landing .land .navbarr  button{
+    width: 20px;
+    padding: 7px 52px;
+    display: flex;
+    background-color: transparent;
+    border-radius: 20px !important;
+    font-size: 18px;
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+}
+.landing .land .intro{
+display: flex;
+margin-top: 160px;
+padding: 0px 40px;
+}
+.landing .land .imgintro{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 55px 31px 0px; */
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+}
+.landing .land .imgintro img{
+    /* border-radius: 35px; */
+    width:auto;
+}
+.landing .land .textintro{
+    width: 50%;
+    /* display: flex; */
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.landing .land .textintro h2{
+    font-size: 38px;
+    text-align: initial;
+    margin-left: 27px;
+    color: white;
+}
+.landing .land .textintro ul{
+margin-top: 22px;
+}
+.landing .land .textintro ul li{
+    font-size: 30px;
+    margin-left: 27px;
+    color: white;
+    line-height:1.7
+}
+.landing .feature{
+    text-align: center;
+    height: 100vh;
+    background-color: #D2CAE4;
+    
+}
+
+.landing .feature .contfeat{
+    margin-top: 88px;
+}
+.landing .feature  img{
+    padding: 21px;
+    background: linear-gradient(180deg, rgba(102, 16, 83, 0) -31%, rgba(102, 29, 123, 0.31638) -8.94%, #6638D1 90.69%, rgba(102, 16, 83, 0) 118%);
+    border-radius: 15px;
+    margin-bottom: 48px;
+    width: 86px;
+    margin-top: 45px;
+}
+.landing .feature  h3{
+    font-size: 23px;
+}
+.landing .feature h1{
+    padding-top: 54px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #6638d1;
+}
+.colorbar1{
+    background-color: #afa3e7;
+    height: 4px;
+    position: relative;
+    width: 66%;
+    border-radius: 5px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.colorbar1::before{
+    content: "";
+    display: block;
+    width: 66.6666%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color:#cb7c1c;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+.colorbar1::after{
+    content: "";
+    display: block;
+    width: 33.3333%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #afa3e7;
+    height: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+.landing .about{
+display: flex;
+height: 600px;
+}
+.landing .about .abouttext{
+width: 40%;
+}
+.landing .about .abouttext h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 77px 0px 50px 29px;
+}
+.landing .about .abouttext p{
+    text-align: initial;
+    color: #949494;
+    margin-left: 29px;
+    line-height: 2;
+    font-size: 20px;
+}
+.landing .about .aboutimg{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 62px;
+}
+.landing .about .aboutimg img{
+    width: 100%;
+    border-radius:35px ;
+    object-fit: cover;
+}
+
+.landing .work{
+    text-align: center;
+    height: 100vh;
+    background-color: #D2CAE4;
+}
+.landing .work .contwork{
+    margin-top: 161px;
+}
+.landing .work  img{
+    margin-bottom: 15px;
+}
+.landing .work  h3{
+    font-size: 23px;
+    font-weight: bold;
+}
+.landing .work h1{
+    padding-top: 54px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #2e068b;
+}
+.landing .work p{
+    color: black;
+    line-height: 2;
+}
+.landing .workicon{
+    display: inline-block;
+    width: 310px;
+    height: 324px;
+    background-color: white;
+    position: relative;
+    border-radius: 17px;
+    z-index: 2;
+}
+.landing .workicon.mainn{
+    background-color: #0a075f;
+}
+.landing .workicon.mainn img{
+    width: 70px;
+}
+.landing .workicon.mainn h3{
+    color: white;
+}
+.landing .workicon.mainn p{
+    color: white;
+    line-height: 3;
+}
+.landing .work .workicon .infoo{
+    margin-top: 39px;
+}
+.landing .work .ly{
+    position: absolute;
+    background: white;
+    width: 314px;
+    height: 300px;
+    top: 58px;
+    transform: rotate(86deg);
+    border-radius: 17px;
+    z-index: 0;
+    left: 33px;
+}
+.landing .work .cardd{
+    position: relative;
+    width: 0px;
+    display: inline-table;
+}
+.landing .ourteam{
+    text-align: center;
+    height: 100%;
+    background-color: #fff;
+    
+}
+
+.landing .ourteam .contour{
+    margin-top: 50px;
+
+}
+.landing .ourteam  img{
+    border-radius: 15px;
+    margin-bottom: 20px;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.landing .ourteam  h3{
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.landing .ourteam h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #2e068b;
+    padding-top: 54px;
+}
+.landing .ourteam span{
+    font-size: 20px;
+    color: #764dd6;
+}
+.landing .ourteam .im{
+    width: 223px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.landing .ourteam .ourteaminfo{
+    display: inline-block;
+    text-align: -webkit-center;
+}
+.landing .android{
+    height: 100vh;
+    background-image: url('../../img/BG.jpg');
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .android .imgapp{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+/* .landing .android .imgapp img{
+width: 100%;
+} */
+.landing .android .textapp{
+    text-align: initial;
+    height: 100%;
+}
+.landing .android .textapp .textcontent{
+    margin-top: 154px;
+    padding:0pc 100px;
+}
+.landing .android .textapp h3{
+    font-size: 30px;
+    color: #340d97;
+}
+.landing .android .textapp h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.landing .android .textapp p{
+    color: #949494;
+    margin: 14px 0px 20px 0px;
+    font-size: 20px;
+    text-align: initial;
+    line-height: 2;
+}
+
+.landing .footer{
+    padding: 70px 0;
+        background-color:#0a075f;
+    color: aliceblue;
+    height: 358px;
+}
+.landing .footer h2{
+    color: aliceblue;
+    margin-bottom: 53px;
+    position: relative;
+    right: 16px;
+}
+.landing .footer h2 img{
+    width: 47px;}
+.landing .footer ul{
+    list-style: none;
+    padding: 0
+}
+.landing .footer ul li a{
+    color: aliceblue !important;
+    text-decoration: none
+}
+.landing .footer ul li {margin-bottom: 15px}
+.landing .footer i{font-size: 25px;color:white;margin-right: 15px;transition: all .5s ease;
+    cursor: pointer;
+margin-bottom: 10px;
+}
+.landing .footer ul li i{
+    color:#47b2e4;
+    font-size: 16px;
+    }
+.landing .footer i:hover{color:cyan}
+.landing .copy{
+    background-color: #1e6282;padding: 20px 0;color: #fff;text-align: center;
+}
+.copy h3{font-size: 20px}
+@media only screen and (max-width: 1180px) {
+    .landing .land .textintro h2{
+        font-size: 28px;
+        text-align: initial;
+        margin-left: 27px;
+        color: white;
+        font-weight: bold;
+    }
+    .landing .land .textintro ul{
+    margin-top: 22px;
+    }
+    .landing .land .textintro ul li{
+        font-size: 20px;
+        margin-left: 27px;
+        color: white;
+        line-height:1.7
+    }
+}
+@media only screen and (max-width: 999px) {
+    .landing .land{
+        height: 100%;
+    }
+    .landing .land .intro{
+        display: flex; 
+        margin-top: 111px;
+        padding: 0px;
+        }
+        .landing .land .imgintro{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 0px 55px 31px 0px; */
+            overflow: hidden;
+            height: 100%;
+            text-align: center;
+        }
+        .landing .land .imgintro img{
+            width: 100%;
+        }
+        .landing .land .textintro{
+            width: 50%;
+            /* display: flex; */
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        .landing .land .textintro h2{
+            font-size: 28px;
+            text-align: initial;
+            margin-left: 27px;
+            color: white;
+            font-weight: bold;
+        }
+        .landing .land .textintro ul{
+        margin-top: 22px;
+        }
+        .landing .land .textintro ul li{
+            font-size: 20px;
+            margin-left: 27px;
+            color: white;
+            line-height:1.7
+        }
+        .landing .feature{
+            text-align: center;
+            height: 100%;
+            background-color: #D2CAE4;
+            
+        }
+        .landing .feature .contfeat{
+            margin-top: 30px;
+        }
+        .landing .feature  img{
+            padding: 21px;
+            background: linear-gradient(180deg, rgba(102, 16, 83, 0) -31%, rgba(102, 29, 123, 0.31638) -8.94%, #6638D1 90.69%, rgba(102, 16, 83, 0) 118%);
+            border-radius: 15px;
+            margin-bottom: 48px;
+            width: 86px;
+            margin-top: 30px;
+        }
+        .landing .feature  h3{
+            font-size: 23px;
+        }
+        .landing .feature h1{
+            padding-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #6638d1;
+        }
+        .landing .ourteam h1{
+            padding-top: 20px;
+            font-size: 30px;
+        }
+        .landing .about{
+            display: block;
+            height: 100%;
+            }
+            .landing .about .abouttext{
+            width: 100%;
+            text-align: center;
+            }
+            .landing .about .abouttext h2{
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .landing .about .abouttext p{
+                text-align: initial;
+                color: #949494;
+                line-height: 2;
+                font-size: 20px;
+                text-align: center;
+            }
+            .landing .about .aboutimg{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                padding: 50px;
+            }
+            .landing .about .aboutimg img{
+                width: 100%;
+                border-radius:35px ;
+            }
+            .landing .ourteam{
+                text-align: center;
+                height: 100%;
+                background-color: #fff;
+                
+            }
+
+            .landing .work{
+                text-align: center;
+                height: 100%;
+                background-color: #D2CAE4;
+            
+            }
+            .landing .work .contwork{
+                margin-top: 50px;
+            }
+            .landing .work  img{
+                margin-bottom: 15px;
+            }
+            .landing .work  h3{
+                font-size: 23px;
+                font-weight: bold;
+            }
+            .landing .work h1{
+                padding-top: 20px;
+                font-size: 30px;
+                font-weight: bold;
+                color: #2e068b;
+            }
+            .landing .work p{
+                color: black;
+                line-height: 2;
+            }
+            .landing .workicon{
+                display: inline-block;
+                width: 310px;
+                height: 324px;
+                background-color: white;
+                position: relative;
+                border-radius: 17px;
+                z-index: 2;
+                margin: 20px;
+            }
+            .landing .workicon.mainn{
+                background-color: #0a075f;
+            }
+            .landing .workicon.mainn img{
+                width: 70px;
+            }
+            .landing .workicon.mainn h3{
+                color: white;
+            }
+            .landing .workicon.mainn p{
+                color: white;
+                line-height: 3;
+            }
+            .landing .work .workicon .infoo{
+                margin-top: 39px;
+            }
+            .landing .work .ly{
+                position: absolute;
+                background: white;
+                width: 314px;
+                height: 300px;
+                top: 58px;
+                transform: rotate(86deg);
+                border-radius: 17px;
+                z-index: 0;
+                left: 33px;
+            }
+            .landing .work .cardd{
+                position: relative;
+                width: 0px;
+                display: inline-table;
+            }
+}
+
+@media only screen and (max-width: 800px) {
+    .landing .land{
+        height: 100%;
+    }
+    .landing .land .intro{
+        display: flex;
+        margin-top: 111px;
+        }
+        .landing .land .imgintro{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 100%;
+            text-align: center;
+        }
+        .landing .land .imgintro img{
+            width: 100%;
+        }
+        .landing .land .textintro{
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        .landing .land .textintro h2{
+            font-size: 20px;
+            text-align: initial;
+            margin-left: 27px;
+            color: white;
+            font-weight: bold;
+        }
+        .landing .land .textintro ul{
+        margin-top: 22px;
+        }
+        .landing .land .textintro ul li{
+            font-size: 15px;
+            margin-left: 27px;
+            color: white;
+            line-height:1.7
+        }
+                .landing .feature{
+            text-align: center;
+            height: 100%;
+            background-color: #D2CAE4;
+            
+        }
+        .landing .feature .contfeat{
+            margin-top: 30px;
+        }
+        .landing .feature  img{
+            padding: 21px;
+            background: linear-gradient(180deg, rgba(102, 16, 83, 0) -31%, rgba(102, 29, 123, 0.31638) -8.94%, #6638D1 90.69%, rgba(102, 16, 83, 0) 118%);
+            border-radius: 15px;
+            margin-bottom: 48px;
+            width: 86px;
+            margin-top: 30px;
+        }
+        .landing .feature  h3{
+            font-size: 23px;
+        }
+        .landing .feature h1{
+            padding-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #6638d1;
+        }
+        .landing .android{
+            height: 100%;
+            background-image: url('../../img/BG.jpg');
+            background-size: 100%;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        .landing .android .imgapp{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        /* .landing .android .imgapp img{
+        width: 100%;
+        } */
+        .landing .android .textapp{
+            text-align: center;
+            height: 100%;
+
+        }
+        .landing .android .textapp .textcontent{
+            margin-top: 50px;
+            padding:0px 40px;
+        }
+        .landing .android .textapp h3{
+            font-size: 20px;
+            color: #340d97;
+        }
+        .landing .android .textapp h1{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .landing .android .textapp p{
+            color: #949494;
+            margin: 14px 0px 20px 0px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 2;
+        }
+        
+}
+@media only screen and (max-width: 700px) {
+
+    .landing .land .navbarr .ulnav {
+       padding: 0px;
+    }
+    .landing .land .navbarr .ulnav li {
+        margin: 5px !important;
+    }
+    .landing .land .intro{
+        display: flex;
+        margin-top: 111px;
+        }
+        .landing .land .imgintro{
+            display: none;
+        }
+        .landing .land .textintro{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 20px
+        }
+        .landing .land .textintro h2{
+            font-size: 27px;
+            margin-left: 27px;
+            color: white;
+            font-weight: bold;
+        }
+        .landing .land .textintro ul{
+        margin-top: 19px;
+        }
+        .landing .land .textintro ul li{
+            font-size: 20px;
+            margin-left: 27px;
+            color: white;
+            line-height:1.7
+        }
+        .landing .land .navbarr{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .landing .land .navbarr img{
+            height: 40px;
+        }
+        .landing .land .navbarr .ulnav li{
+            list-style: none;
+            margin: 0px 10px;
+        }
+        .landing .land .navbarr .ulnav li a{
+            text-decoration: none;
+            font-size: 12px;
+            color: white !important;
+        }
+        .landing .land .navbarr  button{
+            width: 20px;
+            padding: 4px 35px;
+            display: flex;
+            background-color: transparent;
+            border-radius: 20px !important;
+            font-size: 17px;
+            justify-content: center;
+            color: white;
+            border: 2px solid white;
+        }
+        .landing .about .aboutimg{
+            padding: 30px;
+        }
+        .landing .ourteam{
+            text-align: center;
+            height: 100%;
+            background-color: #fff;
+            
+        }
+        .landing .android .imgapp img{
+            width:50%;
+            margin-top: 30px;
+        }
+}

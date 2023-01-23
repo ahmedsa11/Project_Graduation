@@ -1,0 +1,75 @@
+ .dailymeeting{
+    position: relative;
+    width: 30.33%;
+    background-color: #272530;
+    border-radius:20px ;
+    padding: 10px;
+    margin: 5px;
+    overflow: hidden;
+}
+ .dailymeeting i{
+    position: absolute;
+    right: 10px;
+    border: 2px solid #43414c    ;
+    border-radius: 50%;
+    padding: 1px;
+    color: #43414c
+    ;
+}
+ .dailymeeting h4{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+ .dailymeeting ul{
+    list-style: circle;
+    margin-bottom: 0px !important;
+    color: white;
+    margin-left: 0px !important;
+    padding-left: 3px !important;
+    padding-bottom: 30px;
+}
+ .dailymeeting li{
+    display: block;
+    margin: 5px !important;
+    color: #585661;
+}
+ .dailymeeting .im{
+    width: 100%;
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ .dailymeeting span{
+    color: #585661;
+    padding: 10px;
+}
+.dailymeeting .rejoin{
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    position: absolute;
+    background-color: blueviolet;
+    margin-left: auto;
+    right: 5px;
+    bottom: 0px;
+}
+ .dailymeeting .im img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: -5px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 800px) {
+
+.dailymeeting {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
