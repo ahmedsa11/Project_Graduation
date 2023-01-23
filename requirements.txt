@@ -1,0 +1,16 @@
+bidict==0.21.4
+dnspython==1.16.0
+eventlet==0.30.2
+greenlet==1.1.2
+gunicorn==20.1.0
+numpy==1.21.3
+opencv-python==4.5.4.58
+opencv-python-headless==4.5.4.58
+python-engineio==4.3.0
+python-socketio==5.4.1
+six==1.16.0
+nltk==3.6.5
+joblib==1.0.1
+scikit-learn==1.0.2
+scipy==1.8.0
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to ASL</title>
+    <style>
+        .stream {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .stream img {
+            width: 450px;
+            height: 400px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+    </style>
+
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.min.js"></script>
+    <script src="index.js"></script>
+    <div class="stream">
+        <img id="stream_asl" src="">
+    </div>
+    
+</body>
+</html>
